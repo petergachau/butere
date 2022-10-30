@@ -4,12 +4,12 @@ import express from "express";
 const router = express.Router();
 
 // controllers
-const {
+import {
   signup,
   signin,
   forgotPassword,
   resetPassword,
-} = require("../controllers/auth.js");
+} from "../controllers/auth.js"
 
 router.get("/", (req, res) => {
   return res.json({
