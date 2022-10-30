@@ -9,7 +9,7 @@ const {
   signin,
   forgotPassword,
   resetPassword,
-} = require("../controllers/auth");
+} = require("../controllers/auth.js");
 
 router.get("/", (req, res) => {
   return res.json({
